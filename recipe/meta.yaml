@@ -1,6 +1,5 @@
 {% set version = '0.1.0' %}
 {% set posix = 'm2-' if win else '' %}
-{% set native = 'm2w64-' if win else '' %}
 
 package:
   name: r-tinyplot
@@ -13,8 +12,7 @@ source:
   sha256: 563f2210c3db3640599e65c25357997e9054de628ae8fa5c4702ce27edf74be6
 
 build:
-  merge_build_host: True  # [win]
-  number: 0
+  number: 1
   noarch: generic
   rpaths:
     - lib/R/lib/
