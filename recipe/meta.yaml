@@ -1,4 +1,4 @@
-{% set version = '0.1.0' %}
+{% set version = "0.2.0" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/tinyplot_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/tinyplot/tinyplot_{{ version }}.tar.gz
-  sha256: 563f2210c3db3640599e65c25357997e9054de628ae8fa5c4702ce27edf74be6
+  sha256: befea0a7abb4f942bd1430af215afc1fc181327aa25e42834be4b9fc2f19a931
 
 build:
-  number: 1
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -36,8 +36,7 @@ about:
   home: https://grantmcdermott.com/tinyplot/
   dev_url: https://github.com/grantmcdermott/tinyplot
   license: Apache-2.0
-  summary: Lightweight extension of the base R graphics system, with support for automatic legends,
-    facets, and various other enhancements.
+  summary: Lightweight extension of the base R graphics system, with support for automatic legends, facets, and various other enhancements.
   license_family: Apache
   license_file: LICENSE.md
 
