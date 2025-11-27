@@ -1,4 +1,4 @@
-{% set version = "0.5.0" %}
+{% set version = "0.6.0" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/tinyplot_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/tinyplot/tinyplot_{{ version }}.tar.gz
-  sha256: 35b4bf62356ebd669efb2d23abee11c38a1fd75c51f52d4d716494c7b4291371
+  sha256: bcb1ace386bc8f6969ffa731c035ac54dd8f5a376499688d7adcbe761a8b5a1e
 
 build:
-  number: 1
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
